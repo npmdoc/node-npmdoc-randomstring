@@ -1,0 +1,538 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/klughammer/node-randomstring"
+
+    >randomstring (v1.1.5)</a>
+</h1>
+<h4>A module for generating random strings</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.randomstring">module randomstring</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.randomstring.charset">
+            function <span class="apidocSignatureSpan">randomstring.</span>charset
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.randomstring.generate">
+            function <span class="apidocSignatureSpan">randomstring.</span>generate
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan"></span>randomstring</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">randomstring.</span>charset.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.randomstring.charset">module randomstring.charset</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.randomstring.charset.charset">
+            function <span class="apidocSignatureSpan">randomstring.</span>charset
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.randomstring.charset.prototype">module randomstring.charset.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.randomstring.charset.prototype.removeDuplicates">
+            function <span class="apidocSignatureSpan">randomstring.charset.prototype.</span>removeDuplicates
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.randomstring.charset.prototype.removeUnreadable">
+            function <span class="apidocSignatureSpan">randomstring.charset.prototype.</span>removeUnreadable
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.randomstring.charset.prototype.setType">
+            function <span class="apidocSignatureSpan">randomstring.charset.prototype.</span>setType
+            <span class="apidocSignatureSpan">(type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.randomstring.charset.prototype.setcapitalization">
+            function <span class="apidocSignatureSpan">randomstring.charset.prototype.</span>setcapitalization
+            <span class="apidocSignatureSpan">(capitalization)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.randomstring.randomstring">module randomstring.randomstring</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.randomstring.randomstring.generate">
+            function <span class="apidocSignatureSpan">randomstring.randomstring.</span>generate
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.randomstring" id="apidoc.module.randomstring">module randomstring</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.randomstring.charset" id="apidoc.element.randomstring.charset">
+        function <span class="apidocSignatureSpan">randomstring.</span>charset
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Charset() {
+  this.chars = &#x27;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.randomstring.generate" id="apidoc.element.randomstring.generate">
+        function <span class="apidocSignatureSpan">randomstring.</span>generate
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generate = function (options) {
+
+  var charset = new Charset();
+
+  var length, chars, capitalization, string = &#x27;&#x27;;
+
+  // Handle options
+  if (typeof options === &#x27;object&#x27;) {
+    length = options.length || 32;
+
+    if (options.charset) {
+      charset.setType(options.charset);
+    }
+    else {
+      charset.setType(&#x27;alphanumeric&#x27;);
+    }
+
+    if (options.capitalization) {
+      charset.setcapitalization(options.capitalization);
+    }
+
+    if (options.readable) {
+      charset.removeUnreadable();
+    }
+
+    charset.removeDuplicates();
+  }
+  else if (typeof options === &#x27;number&#x27;) {
+    length = options;
+    charset.setType(&#x27;alphanumeric&#x27;);
+  }
+  else {
+    length = 32;
+    charset.setType(&#x27;alphanumeric&#x27;);
+  }
+
+  // Generate the string
+  var charsLen = charset.chars.length;
+  var maxByte = 256 - (256 % charsLen);
+  while (length &#x3e; 0) {
+    var buf = safeRandomBytes(Math.ceil(length * 256 / maxByte));
+    for (var i = 0; i &#x3c; buf.length &#x26;&#x26; length &#x3e; 0; i++) {
+      var randomByte = buf.readUInt8(i);
+      if (randomByte &#x3c; maxByte) {
+        string += charset.chars.charAt(randomByte % charsLen);
+        length--;
+      }
+    }
+  }
+
+  return string;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+## Usage
+
+```javascript
+var randomstring = require(&#x22;randomstring&#x22;);
+
+randomstring.<span class="apidocCodeKeywordSpan">generate</span>();
+// &#x3e;&#x3e; &#x22;XwPp9xazJ0ku5CZnlmgAx2Dld8SHkAeT&#x22;
+
+randomstring.generate(7);
+// &#x3e;&#x3e; &#x22;xqm5wXX&#x22;
+
+randomstring.generate({
+length: 12,
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.randomstring.charset" id="apidoc.module.randomstring.charset">module randomstring.charset</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.randomstring.charset.charset" id="apidoc.element.randomstring.charset.charset">
+        function <span class="apidocSignatureSpan">randomstring.</span>charset
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Charset() {
+  this.chars = &#x27;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.randomstring.charset.prototype" id="apidoc.module.randomstring.charset.prototype">module randomstring.charset.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.randomstring.charset.prototype.removeDuplicates" id="apidoc.element.randomstring.charset.prototype.removeDuplicates">
+        function <span class="apidocSignatureSpan">randomstring.charset.prototype.</span>removeDuplicates
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeDuplicates = function () {
+  var charMap = this.chars.split(&#x27;&#x27;);
+  charMap = arrayUniq(charMap);
+  this.chars = charMap.join(&#x27;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    charset.setcapitalization(options.capitalization);
+  }
+
+  if (options.readable) {
+    charset.removeUnreadable();
+  }
+
+  charset.<span class="apidocCodeKeywordSpan">removeDuplicates</span>();
+}
+else if (typeof options === &#x27;number&#x27;) {
+  length = options;
+  charset.setType(&#x27;alphanumeric&#x27;);
+}
+else {
+  length = 32;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.randomstring.charset.prototype.removeUnreadable" id="apidoc.element.randomstring.charset.prototype.removeUnreadable">
+        function <span class="apidocSignatureSpan">randomstring.charset.prototype.</span>removeUnreadable
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeUnreadable = function () {
+  var unreadableChars = /[0OIl]/g;
+  this.chars = this.chars.replace(unreadableChars, &#x27;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+
+  if (options.capitalization) {
+    charset.setcapitalization(options.capitalization);
+  }
+
+  if (options.readable) {
+    charset.<span class="apidocCodeKeywordSpan">removeUnreadable</span>();
+  }
+
+  charset.removeDuplicates();
+}
+else if (typeof options === &#x27;number&#x27;) {
+  length = options;
+  charset.setType(&#x27;alphanumeric&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.randomstring.charset.prototype.setType" id="apidoc.element.randomstring.charset.prototype.setType">
+        function <span class="apidocSignatureSpan">randomstring.charset.prototype.</span>setType
+        <span class="apidocSignatureSpan">(type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setType = function (type) {
+  var chars;
+
+  var numbers    = &#x27;0123456789&#x27;;
+  var charsLower = &#x27;abcdefghijklmnopqrstuvwxyz&#x27;;
+  var charsUpper = charsLower.toUpperCase();
+  var hexChars   = &#x27;abcdef&#x27;;
+
+  if (type === &#x27;alphanumeric&#x27;) {
+    chars = numbers + charsLower + charsUpper;
+  }
+  else if (type === &#x27;numeric&#x27;) {
+    chars = numbers;
+  }
+  else if (type === &#x27;alphabetic&#x27;) {
+    chars = charsLower + charsUpper;
+  }
+  else if (type === &#x27;hex&#x27;) {
+    chars = numbers + hexChars;
+  }
+  else {
+    chars = type;
+  }
+
+  this.chars = chars;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var length, chars, capitalization, string = &#x27;&#x27;;
+
+// Handle options
+if (typeof options === &#x27;object&#x27;) {
+  length = options.length || 32;
+
+  if (options.charset) {
+    charset.<span class="apidocCodeKeywordSpan">setType</span>(options.charset);
+  }
+  else {
+    charset.setType(&#x27;alphanumeric&#x27;);
+  }
+
+  if (options.capitalization) {
+    charset.setcapitalization(options.capitalization);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.randomstring.charset.prototype.setcapitalization" id="apidoc.element.randomstring.charset.prototype.setcapitalization">
+        function <span class="apidocSignatureSpan">randomstring.charset.prototype.</span>setcapitalization
+        <span class="apidocSignatureSpan">(capitalization)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setcapitalization = function (capitalization) {
+  if (capitalization === &#x27;uppercase&#x27;) {
+    this.chars = this.chars.toUpperCase();
+  }
+  else if (capitalization === &#x27;lowercase&#x27;) {
+    this.chars = this.chars.toLowerCase();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  charset.setType(options.charset);
+}
+else {
+  charset.setType(&#x27;alphanumeric&#x27;);
+}
+
+if (options.capitalization) {
+  charset.<span class="apidocCodeKeywordSpan">setcapitalization</span>(options.capitalization);
+}
+
+if (options.readable) {
+  charset.removeUnreadable();
+}
+
+charset.removeDuplicates();
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.randomstring.randomstring" id="apidoc.module.randomstring.randomstring">module randomstring.randomstring</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.randomstring.randomstring.generate" id="apidoc.element.randomstring.randomstring.generate">
+        function <span class="apidocSignatureSpan">randomstring.randomstring.</span>generate
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generate = function (options) {
+
+  var charset = new Charset();
+
+  var length, chars, capitalization, string = &#x27;&#x27;;
+
+  // Handle options
+  if (typeof options === &#x27;object&#x27;) {
+    length = options.length || 32;
+
+    if (options.charset) {
+      charset.setType(options.charset);
+    }
+    else {
+      charset.setType(&#x27;alphanumeric&#x27;);
+    }
+
+    if (options.capitalization) {
+      charset.setcapitalization(options.capitalization);
+    }
+
+    if (options.readable) {
+      charset.removeUnreadable();
+    }
+
+    charset.removeDuplicates();
+  }
+  else if (typeof options === &#x27;number&#x27;) {
+    length = options;
+    charset.setType(&#x27;alphanumeric&#x27;);
+  }
+  else {
+    length = 32;
+    charset.setType(&#x27;alphanumeric&#x27;);
+  }
+
+  // Generate the string
+  var charsLen = charset.chars.length;
+  var maxByte = 256 - (256 % charsLen);
+  while (length &#x3e; 0) {
+    var buf = safeRandomBytes(Math.ceil(length * 256 / maxByte));
+    for (var i = 0; i &#x3c; buf.length &#x26;&#x26; length &#x3e; 0; i++) {
+      var randomByte = buf.readUInt8(i);
+      if (randomByte &#x3c; maxByte) {
+        string += charset.chars.charAt(randomByte % charsLen);
+        length--;
+      }
+    }
+  }
+
+  return string;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+## Usage
+
+```javascript
+var randomstring = require(&#x22;randomstring&#x22;);
+
+randomstring.<span class="apidocCodeKeywordSpan">generate</span>();
+// &#x3e;&#x3e; &#x22;XwPp9xazJ0ku5CZnlmgAx2Dld8SHkAeT&#x22;
+
+randomstring.generate(7);
+// &#x3e;&#x3e; &#x22;xqm5wXX&#x22;
+
+randomstring.generate({
+length: 12,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
